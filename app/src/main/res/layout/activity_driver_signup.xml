@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    android:isScrollContainer="true"
+    tools:context=".Registration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="always"
+        android:scrollbarSize="1dp"
+        android:scrollbarThumbVertical="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="337dp"
+                android:layout_height="572dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/loginpageuiback"
+                android:gravity="bottom|center|center_horizontal|top"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Enter Your Details"
+                    android:textColor="#D82B2A2A"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/et_driver_firstname"
+                    android:layout_width="285dp"
+                    android:layout_height="47dp"
+                    android:background="@drawable/textfield"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="15dp"
+                    android:textColor="#F8252525"
+                    android:textColorHint="#CB9E9A9A"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="303dp"
+                    android:layout_height="18dp" />
+
+                <EditText
+                    android:id="@+id/et_driver_lastname"
+                    android:layout_width="285dp"
+                    android:layout_height="47dp"
+                    android:background="@drawable/textfield"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="15dp"
+                    android:textColor="#F8252525"
+                    android:textColorHint="#CB9E9A9A"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp" />
+
+                <EditText
+                    android:id="@+id/et_driver_email"
+                    android:layout_width="285dp"
+                    android:layout_height="47dp"
+                    android:background="@drawable/textfield"
+                    android:ems="10"
+                    android:hint="Enter Your Email "
+                    android:inputType="number"
+                    android:paddingLeft="15dp"
+                    android:textColor="#F8252525"
+                    android:textColorHint="#CB9E9A9A"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="297dp"
+                    android:layout_height="18dp" />
+
+                <EditText
+                    android:id="@+id/et_driver_password"
+                    android:layout_width="285dp"
+                    android:layout_height="47dp"
+                    android:background="@drawable/textfield"
+                    android:ems="10"
+                    android:hint="Enter Your Password"
+                    android:inputType="textPersonName|textPassword"
+                    android:paddingLeft="15dp"
+                    android:textColor="#F8252525"
+                    android:textColorHint="#CB9E9A9A"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp" />
+
+                <EditText
+                    android:id="@+id/et_driver_re_password"
+                    android:layout_width="285dp"
+                    android:layout_height="47dp"
+                    android:background="@drawable/textfield"
+                    android:ems="10"
+                    android:hint="Re-enter Your Password"
+                    android:inputType="textPersonName|textPassword"
+                    android:paddingLeft="15dp"
+                    android:textColor="#F8252525"
+                    android:textColorHint="#CB9E9A9A" />
+
+                <View
+                    android:id="@+id/view16"
+                    android:layout_width="319dp"
+                    android:layout_height="11dp" />
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="289dp"
+                    android:layout_height="51dp"
+                    android:background="@drawable/createaccount"
+                    android:onClick="registration" />
+
+                <View
+                    android:id="@+id/view11"
+                    android:layout_width="303dp"
+                    android:layout_height="13dp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="19dp"
+                    android:text="By registering,you agree to our "
+                    android:textAlignment="center"
+                    android:textColor="#E4090909"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button5"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:onClick="policy"
+                    android:text="Privacy policy"
+                    android:textColor="#F3EC0E0E" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

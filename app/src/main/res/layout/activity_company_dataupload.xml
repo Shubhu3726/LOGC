@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".company_dataupload">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textfield"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/te"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_below="@id/et_login"
+                    android:text="Date :"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="40dp"
+                    tools:layout_editor_absoluteY="176dp" />
+
+                <EditText
+                    android:id="@+id/et_cupload_date"
+                    android:layout_width="200dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/textfield"
+
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:visibility="invisible"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_below="@id/et_login"
+                    android:text="Transport Name:"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="40dp"
+                    tools:layout_editor_absoluteY="176dp" />
+
+                <EditText
+                    android:id="@+id/transport_name"
+                    android:layout_width="200dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/textfield"
+
+                    android:paddingBottom="5dp"
+                    android:text="..."
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="Weight :"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="40dp"
+                    tools:layout_editor_absoluteY="234dp" />
+
+                <EditText
+                    android:id="@+id/weight"
+                    android:layout_width="200dp"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="125dp"
+                    android:background="@drawable/textfield"
+                    android:text=""
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="184dp"
+                    tools:layout_editor_absoluteY="234dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:text="Sender:"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="40dp"
+                    tools:layout_editor_absoluteY="419dp" />
+
+                <EditText
+                    android:id="@+id/sender"
+                    android:layout_width="200dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="115dp"
+                    android:background="@drawable/textfield"
+                    android:text=""
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="184dp"
+                    tools:layout_editor_absoluteY="419dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:text="Packing Place :"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="40dp"
+                    tools:layout_editor_absoluteY="419dp" />
+
+                <EditText
+                    android:id="@+id/packing_place"
+                    android:layout_width="200dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/textfield"
+                    android:text=""
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="184dp"
+                    tools:layout_editor_absoluteY="419dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="146dp"
+                    android:layout_height="42dp"
+                    android:text="Reciver:-"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="98dp" />
+
+                <EditText
+                    android:id="@+id/reciver"
+                    android:layout_width="267sp"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/textfield"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="179dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:text="Drop Add.:-"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.06"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="98dp" />
+
+                <EditText
+                    android:id="@+id/drop_add"
+                    android:layout_width="267sp"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/textfield"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="179dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/approved"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="30dp"
+                android:text="Aproved"
+                android:textSize="24sp"
+
+
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

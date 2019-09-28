@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_profile">
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Email Id"
+        android:textStyle="bold"
+
+        android:textSize="30sp" />
+
+
+    <EditText
+        android:id="@+id/et_fname"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_email"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="First Name"
+        android:textSize="24sp" />
+    <EditText
+        android:id="@+id/et_lname"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_fname"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Last Name"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/et_mobileno"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_lname"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+
+        android:text=""
+        android:inputType="phone"
+        android:hint="Mobile No"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/et_country"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_mobileno"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Country"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/et_lang"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_country"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Languages you know"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_lang"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/common_google_play_services_update_button"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_update"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="24sp"
+        android:text="Back" />
+
+
+</RelativeLayout>
+
+
